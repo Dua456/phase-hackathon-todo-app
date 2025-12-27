@@ -17,9 +17,6 @@ Provide a clean, intuitive command-line interface with a numbered menu system. T
 ### V. Robust Error Handling
 Implement comprehensive error handling for all user inputs. The application should gracefully handle invalid commands, incorrect parameters, and edge cases without crashing.
 
-### VI. Test-First Approach
-Write tests before implementing functionality. Verify that code meets acceptance criteria from the task definitions before considering implementation complete.
-
 ## Additional Constraints
 
 ### Technology Stack
@@ -55,8 +52,7 @@ Write tests before implementing functionality. Verify that code meets acceptance
 - Ensure compliance with CLI interface design
 
 ## Governance
-This constitution supersedes all other development practices for this project. Any deviations require explicit approval and documentation of an amendment.
 
-All PRs/reviews must verify compliance with spec-driven development principles; Complexity must be justified; Use specification documents for development guidance.
+This constitution supersedes all other development practices for this project. Any deviations require explicit approval and documentation of an amendment.
 
 **Version**: 1.0.0 | **Ratified**: 2025-12-27 | **Last Amended**: 2025-12-27
