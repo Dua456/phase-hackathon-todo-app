@@ -1,0 +1,9 @@
+# requirements.txt
+fastapi
+uvicorn
+sqlmodel
+python-dotenv
+python-jose[cryptography]
+passlib[argon2]
+python-multipart
+httpx                
