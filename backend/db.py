@@ -2,6 +2,7 @@ from sqlmodel import create_engine, Session, SQLModel
 from typing import Generator
 import os
 from dotenv import load_dotenv
+from sqlalchemy import text
 
 # Load environment variables FIRST
 load_dotenv()  # This is the missing line that was causing DATABASE_URL to be wrong/default
@@ -17,8 +18,8 @@ engine = create_engine(DATABASE_URL, echo=False)  # echo=True for debugging SQL 
 
 def create_db_and_tables():
     """Create all database tables defined in models.py"""
-    # Drop all tables and recreate them (for development only)
-    SQLModel.metadata.drop_all(engine)
+    # Create all tables from the current models
+    # This will only create tables that don't already exist
     SQLModel.metadata.create_all(engine)
 
 
